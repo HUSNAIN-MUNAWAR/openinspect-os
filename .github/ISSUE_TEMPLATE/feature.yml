@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a focused OpenInspect OS improvement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or workflow
+      description: Describe the inspection, edge, reporting, data or developer workflow this improves.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Include expected behavior and any API, UI, data or model-contract impact.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundaries
+      options:
+        - label: This request does not require proprietary media, credentials or private customer data.
+          required: true
+        - label: I will not describe candidate model results as production performance without evidence.
+          required: true

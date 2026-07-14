@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openinspect-os"
+version = "0.1.0"
+description = "Open-source multimodal industrial asset inspection platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "OpenInspect OS Contributors"}]
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.29",
+  "sqlalchemy>=2.0",
+  "alembic>=1.13",
+  "psycopg[binary]>=3.1",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.2",
+  "python-multipart>=0.0.9",
+  "PyJWT>=2.8",
+  "opencv-python-headless>=4.9",
+  "numpy>=1.26",
+  "scikit-image>=0.22",
+  "Pillow>=10.0",
+  "reportlab>=4.0",
+  "httpx>=0.27",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.5",
+  "mypy>=1.10",
+  "types-PyYAML",
+]
+ml = [
+  "torch>=2.2",
+  "albumentations>=1.4",
+  "onnxruntime>=1.18",
+  "mlflow>=2.13",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "apps/api", "apps/edge-agent"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+ignore = ["E402", "E702", "E741"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true
+follow_imports = "skip"
+
+[project.scripts]
+openinspect-edge = "openinspect_edge.cli:main"
+
+[tool.setuptools]
+packages = [
+  "services", "services.vision", "services.sonar", "services.localization",
+  "services.change_detection", "services.reporting", "services.synchronization",
+  "openinspect_api", "openinspect_edge", "openinspect_sdk"
+]
+
+[tool.setuptools.package-dir]
+openinspect_api = "apps/api/openinspect_api"
+openinspect_edge = "apps/edge-agent/openinspect_edge"
+openinspect_sdk = "packages/python-sdk/openinspect_sdk"

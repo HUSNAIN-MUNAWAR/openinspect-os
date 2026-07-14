@@ -1,0 +1,136 @@
+{
+  "name": "OpenInspect OS Project-Owned Demo Dataset",
+  "version": "0.1.0",
+  "license": "CC BY 4.0",
+  "structural": [
+    {
+      "image": "datasets\\project-owned\\structural\\structural_00.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_00_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": 0.12
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_01.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_01_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": 0.12
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_02.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_02_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": 0.12
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_03.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_03_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": null
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_04.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_04_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": null
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_05.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_05_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": null
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_06.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_06_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": null
+    },
+    {
+      "image": "datasets\\project-owned\\structural\\structural_07.png",
+      "mask": "datasets\\project-owned\\ground_truth\\structural_07_mask.png",
+      "simulated_defect": true,
+      "mm_per_pixel": null
+    }
+  ],
+  "pipeline": [
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_00.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_00_mask.png",
+      "timestamp_s": 0.0,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_01.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_01_mask.png",
+      "timestamp_s": 0.5,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_02.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_02_mask.png",
+      "timestamp_s": 1.0,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_03.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_03_mask.png",
+      "timestamp_s": 1.5,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_04.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_04_mask.png",
+      "timestamp_s": 2.0,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_05.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_05_mask.png",
+      "timestamp_s": 2.5,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_06.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_06_mask.png",
+      "timestamp_s": 3.0,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_07.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_07_mask.png",
+      "timestamp_s": 3.5,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_08.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_08_mask.png",
+      "timestamp_s": 4.0,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_09.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_09_mask.png",
+      "timestamp_s": 4.5,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_10.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_10_mask.png",
+      "timestamp_s": 5.0,
+      "simulated_scene": true
+    },
+    {
+      "image": "datasets\\project-owned\\pipeline\\pipeline_11.png",
+      "mask": "datasets\\project-owned\\ground_truth\\pipeline_11_mask.png",
+      "timestamp_s": 5.5,
+      "simulated_scene": true
+    }
+  ],
+  "sonar": "datasets\\project-owned\\sonar\\pipeline_sonar.csv",
+  "navigation": "datasets\\project-owned\\navigation\\pipeline_navigation.csv",
+  "limitations": [
+    "All visible defects and pipeline scenes are synthetic and intended for software validation only.",
+    "No claim of production-grade corrosion or crack-width accuracy is made.",
+    "Physical measurements are only emitted for samples carrying explicit mm_per_pixel calibration."
+  ]
+}

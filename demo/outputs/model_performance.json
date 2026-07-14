@@ -1,0 +1,180 @@
+{
+  "dataset": "OpenInspect OS Project-Owned Demo Dataset v0.1.0",
+  "hardware": "runtime-dependent CPU benchmark",
+  "structural": {
+    "images": 8,
+    "precision": 0.9150989689664397,
+    "recall": 0.7287382408778211,
+    "iou": 0.6790712066030465,
+    "f1": 0.7907329683772866,
+    "cpu_latency_ms_mean": 39.51208750368096,
+    "cpu_latency_ms_p95": 43.666679959278554,
+    "per_image": [
+      {
+        "precision": 0.8413050364269876,
+        "recall": 0.7290694482569311,
+        "iou": 0.640926640926641,
+        "f1": 0.7811764705882352,
+        "image": "structural_00.png"
+      },
+      {
+        "precision": 0.961353711790393,
+        "recall": 0.8296589410212927,
+        "iou": 0.8028811086797958,
+        "f1": 0.8906645089511479,
+        "image": "structural_01.png"
+      },
+      {
+        "precision": 0.9288736651219021,
+        "recall": 0.8032758320264854,
+        "iou": 0.7567301378857518,
+        "f1": 0.8615212109886002,
+        "image": "structural_02.png"
+      },
+      {
+        "precision": 0.9672101449275362,
+        "recall": 0.8277519379844961,
+        "iou": 0.8051575931232091,
+        "f1": 0.892063492063492,
+        "image": "structural_03.png"
+      },
+      {
+        "precision": 0.8439233484619264,
+        "recall": 0.8251972386587771,
+        "iou": 0.7159358288770054,
+        "f1": 0.8344552480678135,
+        "image": "structural_04.png"
+      },
+      {
+        "precision": 0.910268806807194,
+        "recall": 0.781634008635005,
+        "iou": 0.7257169287696578,
+        "f1": 0.8410613776467436,
+        "image": "structural_05.png"
+      },
+      {
+        "precision": 0.9346210995542348,
+        "recall": 0.21945688201430483,
+        "iou": 0.21613882366416587,
+        "f1": 0.35545090652225103,
+        "image": "structural_06.png"
+      },
+      {
+        "precision": 0.933235938641344,
+        "recall": 0.8138616384252771,
+        "iou": 0.7690825908981459,
+        "f1": 0.8694705321900095,
+        "image": "structural_07.png"
+      }
+    ]
+  },
+  "pipeline": {
+    "images": 12,
+    "precision": 0.9955811512246749,
+    "recall": 0.8513184319578683,
+    "iou": 0.84812207646765,
+    "f1": 0.9173836340839902,
+    "cpu_latency_ms_mean": 140.772974982004,
+    "cpu_latency_ms_p95": 265.0364699715281,
+    "mean_visibility": 0.281791220364257,
+    "per_image": [
+      {
+        "precision": 1.0,
+        "recall": 0.8342889386410383,
+        "iou": 0.8342889386410383,
+        "f1": 0.9096592375017366,
+        "image": "pipeline_00.png",
+        "visibility": 0.3018057953229405
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8344891607055097,
+        "iou": 0.8344891607055097,
+        "f1": 0.9097782408096442,
+        "image": "pipeline_01.png",
+        "visibility": 0.30136509697042885
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8342707366351771,
+        "iou": 0.8342707366351771,
+        "f1": 0.9096484177309399,
+        "image": "pipeline_02.png",
+        "visibility": 0.3022877177387759
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8344891607055097,
+        "iou": 0.8344891607055097,
+        "f1": 0.9097782408096442,
+        "image": "pipeline_03.png",
+        "visibility": 0.30454699153308307
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8344891607055097,
+        "iou": 0.8344891607055097,
+        "f1": 0.9097782408096442,
+        "image": "pipeline_04.png",
+        "visibility": 0.30308359501073184
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.9313056298804128,
+        "iou": 0.9313056298804128,
+        "f1": 0.9644311241800497,
+        "image": "pipeline_05.png",
+        "visibility": 0.1780552136406962
+      },
+      {
+        "precision": 0.9969840837451842,
+        "recall": 0.9326525783141302,
+        "iou": 0.9300286782589756,
+        "f1": 0.9637459678556985,
+        "image": "pipeline_06.png",
+        "visibility": 0.1775948826134382
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8350352208813411,
+        "iou": 0.8350352208813411,
+        "f1": 0.9101026632941526,
+        "image": "pipeline_07.png",
+        "visibility": 0.30368650362311284
+      },
+      {
+        "precision": 0.949989730950914,
+        "recall": 0.8419337811026775,
+        "iou": 0.8062014152752117,
+        "f1": 0.8927037798299703,
+        "image": "pipeline_08.png",
+        "visibility": 0.30245291651375505
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.834216130617594,
+        "iou": 0.834216130617594,
+        "f1": 0.9096159571300981,
+        "image": "pipeline_09.png",
+        "visibility": 0.30225932565460645
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8344709586996487,
+        "iou": 0.8344709586996487,
+        "f1": 0.9097674234005398,
+        "image": "pipeline_10.png",
+        "visibility": 0.30229146177770655
+      },
+      {
+        "precision": 1.0,
+        "recall": 0.8341797266058719,
+        "iou": 0.8341797266058719,
+        "f1": 0.9095943156557637,
+        "image": "pipeline_11.png",
+        "visibility": 0.3020651439718087
+      }
+    ]
+  },
+  "claims": "Metrics apply only to the project-owned synthetic validation set and are not field-performance claims."
+}

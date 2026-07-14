@@ -1,0 +1,573 @@
+{
+  "organization": {
+    "id": "18b193cd-a08e-4889-bf78-f13f814076cc",
+    "name": "OpenInspect Demo Organization"
+  },
+  "facilities": [
+    {
+      "id": "e48de91e-51f1-41e1-93d3-78bf36b3f73d",
+      "name": "Bridge Materials Lab",
+      "country": "Pakistan"
+    },
+    {
+      "id": "a1b410e6-5efe-4a66-b953-b48d0fd0dd54",
+      "name": "Ras Laffan Offshore Demo",
+      "country": "Qatar"
+    }
+  ],
+  "assets": [
+    {
+      "id": "511d6ecd-5ea8-4c12-9169-9773a5418704",
+      "name": "Concrete Test Wall A",
+      "asset_type": "concrete_structure"
+    },
+    {
+      "id": "979cebfa-3406-4e4d-87d1-cfccdf3df76b",
+      "name": "Subsea Outfall Pipeline P-14",
+      "asset_type": "subsea_pipeline"
+    }
+  ],
+  "missions": [
+    {
+      "id": "59189332-992d-4633-9c2e-afff260b0c73",
+      "name": "Structural Crack Baseline",
+      "mission_type": "structural",
+      "coverage_percent": 100.0
+    },
+    {
+      "id": "ea11c80b-b43c-4447-b520-61efeab85fcc",
+      "name": "Subsea Pipeline Pass 01",
+      "mission_type": "pipeline",
+      "coverage_percent": 83.33333333333333
+    }
+  ],
+  "processing": {
+    "structural": {
+      "outputs": [
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\uploads\\9cbf55171a2d0e8a.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\processed\\9cbf55171a2d0e8a_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\processed\\9cbf55171a2d0e8a_overlay.png",
+          "confidence": 0.99,
+          "severity": "moderate-relative",
+          "measurement": {
+            "pixel_length": 713.0,
+            "mean_width_px": 4.20271635055542,
+            "max_width_px": 6.0,
+            "crack_density": 0.0013753858024691359,
+            "affected_area_percent": 0.6089891975308642,
+            "calibrated_length_mm": null,
+            "calibrated_mean_width_mm": null,
+            "uncertainty_percent": 20.0
+          },
+          "quality": {
+            "sharpness": 2856.9407034173846,
+            "brightness": 153.84006558641974,
+            "contrast": 15.141851763948075,
+            "visibility": 0.19838182026869416,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic ground truth compatible inference"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\uploads\\70dcb5e8457fdeaa.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\processed\\70dcb5e8457fdeaa_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\processed\\70dcb5e8457fdeaa_overlay.png",
+          "confidence": 0.99,
+          "severity": "moderate-relative",
+          "measurement": {
+            "pixel_length": 710.0,
+            "mean_width_px": 5.939438819885254,
+            "max_width_px": 6.393799781799316,
+            "crack_density": 0.0013695987654320989,
+            "affected_area_percent": 0.8834876543209876,
+            "calibrated_length_mm": null,
+            "calibrated_mean_width_mm": null,
+            "uncertainty_percent": 20.0
+          },
+          "quality": {
+            "sharpness": 2863.7806353467067,
+            "brightness": 153.45951774691358,
+            "contrast": 16.76610489124478,
+            "visibility": 0.22028514038807656,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic ground truth compatible inference"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\uploads\\102a12bb30c90408.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\processed\\102a12bb30c90408_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\processed\\102a12bb30c90408_overlay.png",
+          "confidence": 0.99,
+          "severity": "moderate-relative",
+          "measurement": {
+            "pixel_length": 780.0,
+            "mean_width_px": 5.9656524658203125,
+            "max_width_px": 8.393799781799316,
+            "crack_density": 0.0015046296296296296,
+            "affected_area_percent": 0.9573688271604939,
+            "calibrated_length_mm": null,
+            "calibrated_mean_width_mm": null,
+            "uncertainty_percent": 20.0
+          },
+          "quality": {
+            "sharpness": 2871.672793998446,
+            "brightness": 153.37589699074073,
+            "contrast": 17.047865271810686,
+            "visibility": 0.2241263252383023,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic ground truth compatible inference"
+        }
+      ],
+      "coverage_percent": 100.0
+    },
+    "pipeline": {
+      "outputs": [
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\a5a8a6723f8844d8.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a5a8a6723f8844d8_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a5a8a6723f8844d8_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a5a8a6723f8844d8_pipeline_overlay.png",
+          "visibility": 0.3018057953229405,
+          "confidence": 0.9473604681069959,
+          "quality": {
+            "sharpness": 135.4979558585675,
+            "brightness": 102.2384587191358,
+            "contrast": 23.64472245916094,
+            "visibility": 0.3099639745858886,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\ee3b2d376550deb6.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\ee3b2d376550deb6_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\ee3b2d376550deb6_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\ee3b2d376550deb6_pipeline_overlay.png",
+          "visibility": 0.30136509697042885,
+          "confidence": 0.9473958333333334,
+          "quality": {
+            "sharpness": 135.0371907446553,
+            "brightness": 102.52259259259259,
+            "contrast": 23.559899830153327,
+            "visibility": 0.3095057428099617,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\b942411b614253bc.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\b942411b614253bc_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\b942411b614253bc_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\b942411b614253bc_pipeline_overlay.png",
+          "visibility": 0.3022877177387759,
+          "confidence": 0.9473572530864198,
+          "quality": {
+            "sharpness": 135.39869196238902,
+            "brightness": 102.4276601080247,
+            "contrast": 23.64918519976679,
+            "visibility": 0.3104594365103494,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\826ffeff87ebe0d1.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\826ffeff87ebe0d1_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\826ffeff87ebe0d1_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\826ffeff87ebe0d1_pipeline_overlay.png",
+          "visibility": 0.30454699153308307,
+          "confidence": 0.9473958333333334,
+          "quality": {
+            "sharpness": 135.9816589405555,
+            "brightness": 102.43129243827161,
+            "contrast": 23.824821500878848,
+            "visibility": 0.3127735885228775,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\6b930512e064e856.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\6b930512e064e856_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\6b930512e064e856_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\6b930512e064e856_pipeline_overlay.png",
+          "visibility": 0.30308359501073184,
+          "confidence": 0.9473958333333334,
+          "quality": {
+            "sharpness": 135.47703066352295,
+            "brightness": 102.46386959876543,
+            "contrast": 23.704595051140423,
+            "visibility": 0.31127066189922714,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\4b11ce0540a7bd71.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\4b11ce0540a7bd71_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\4b11ce0540a7bd71_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\4b11ce0540a7bd71_pipeline_overlay.png",
+          "visibility": 0.1780552136406962,
+          "confidence": 0.9644965277777778,
+          "quality": {
+            "sharpness": 7.043607251597984,
+            "brightness": 83.03176890432098,
+            "contrast": 16.136731891015625,
+            "visibility": 0.18127312634358358,
+            "usable": false
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\1d42ec72a275e3ec.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\1d42ec72a275e3ec_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\1d42ec72a275e3ec_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\1d42ec72a275e3ec_pipeline_overlay.png",
+          "visibility": 0.1775948826134382,
+          "confidence": 0.965232767489712,
+          "quality": {
+            "sharpness": 6.9650733015165365,
+            "brightness": 83.15419367283951,
+            "contrast": 16.071878637957404,
+            "visibility": 0.18073674075798035,
+            "usable": false
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\be2b6a8b0991e1b9.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\be2b6a8b0991e1b9_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\be2b6a8b0991e1b9_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\be2b6a8b0991e1b9_pipeline_overlay.png",
+          "visibility": 0.30368650362311284,
+          "confidence": 0.9474922839506174,
+          "quality": {
+            "sharpness": 135.53246526847505,
+            "brightness": 102.30258487654321,
+            "contrast": 23.779095260434804,
+            "visibility": 0.31187441010761247,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\e404430bba3fa48f.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\e404430bba3fa48f_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\e404430bba3fa48f_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\e404430bba3fa48f_pipeline_overlay.png",
+          "visibility": 0.30245291651375505,
+          "confidence": 0.9565393518518519,
+          "quality": {
+            "sharpness": 141.36106088175808,
+            "brightness": 101.59291859567901,
+            "contrast": 23.698218738578024,
+            "visibility": 0.30917130925834463,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\a21f8ca942307c20.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a21f8ca942307c20_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a21f8ca942307c20_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a21f8ca942307c20_pipeline_overlay.png",
+          "visibility": 0.30225932565460645,
+          "confidence": 0.9473476080246914,
+          "quality": {
+            "sharpness": 135.93736882178723,
+            "brightness": 102.29718364197531,
+            "contrast": 23.67005542249384,
+            "visibility": 0.31043181444242074,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\f3dc0518ba22d641.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\f3dc0518ba22d641_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\f3dc0518ba22d641_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\f3dc0518ba22d641_pipeline_overlay.png",
+          "visibility": 0.30229146177770655,
+          "confidence": 0.9473926183127572,
+          "quality": {
+            "sharpness": 136.25408204374915,
+            "brightness": 102.31405864197531,
+            "contrast": 23.669050754519454,
+            "visibility": 0.3104576436564859,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\a6beec089c48848a.png",
+          "enhanced": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a6beec089c48848a_enhanced.png",
+          "mask": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a6beec089c48848a_pipeline_mask.png",
+          "overlay": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\processed\\a6beec089c48848a_pipeline_overlay.png",
+          "visibility": 0.3020651439718087,
+          "confidence": 0.9473411779835391,
+          "quality": {
+            "sharpness": 136.2426401007693,
+            "brightness": 102.40265625,
+            "contrast": 23.63636385449837,
+            "visibility": 0.3102334068492255,
+            "usable": true
+          },
+          "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+        },
+        {
+          "source": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\uploads\\596cfc2652e27da5.csv",
+          "sonar_detections": [
+            {
+              "timestamp_s": 0.0,
+              "range_bin": 53,
+              "intensity": 90.47521209716797,
+              "confidence": 0.8615178753406657
+            },
+            {
+              "timestamp_s": 0.25,
+              "range_bin": 53,
+              "intensity": 90.09313201904297,
+              "confidence": 0.8616931861264508
+            },
+            {
+              "timestamp_s": 0.5,
+              "range_bin": 54,
+              "intensity": 89.75143432617188,
+              "confidence": 0.8629958814678805
+            },
+            {
+              "timestamp_s": 0.75,
+              "range_bin": 55,
+              "intensity": 91.56940460205078,
+              "confidence": 0.867873203920786
+            },
+            {
+              "timestamp_s": 1.0,
+              "range_bin": 56,
+              "intensity": 93.3026351928711,
+              "confidence": 0.8700038587455454
+            },
+            {
+              "timestamp_s": 1.25,
+              "range_bin": 56,
+              "intensity": 94.38367462158203,
+              "confidence": 0.8706530796034647
+            },
+            {
+              "timestamp_s": 1.5,
+              "range_bin": 56,
+              "intensity": 93.8532943725586,
+              "confidence": 0.8691880950830624
+            },
+            {
+              "timestamp_s": 1.75,
+              "range_bin": 56,
+              "intensity": 93.17234802246094,
+              "confidence": 0.866980657839163
+            },
+            {
+              "timestamp_s": 2.0,
+              "range_bin": 56,
+              "intensity": 91.55563354492188,
+              "confidence": 0.8639859946101707
+            },
+            {
+              "timestamp_s": 2.25,
+              "range_bin": 55,
+              "intensity": 90.75936889648438,
+              "confidence": 0.864099666341964
+            },
+            {
+              "timestamp_s": 2.5,
+              "range_bin": 54,
+              "intensity": 90.77410888671875,
+              "confidence": 0.8664205345057936
+            },
+            {
+              "timestamp_s": 2.75,
+              "range_bin": 53,
+              "intensity": 90.80126190185547,
+              "confidence": 0.8678103513480608
+            },
+            {
+              "timestamp_s": 3.0,
+              "range_bin": 52,
+              "intensity": 90.53437805175781,
+              "confidence": 0.8660299011791324
+            },
+            {
+              "timestamp_s": 3.25,
+              "range_bin": 52,
+              "intensity": 90.25862121582031,
+              "confidence": 0.8633322409478379
+            },
+            {
+              "timestamp_s": 3.5,
+              "range_bin": 51,
+              "intensity": 90.83231353759766,
+              "confidence": 0.8656871240048672
+            },
+            {
+              "timestamp_s": 3.75,
+              "range_bin": 50,
+              "intensity": 91.30551147460938,
+              "confidence": 0.8693067931103289
+            },
+            {
+              "timestamp_s": 4.0,
+              "range_bin": 49,
+              "intensity": 91.08773040771484,
+              "confidence": 0.8687504350220131
+            },
+            {
+              "timestamp_s": 4.25,
+              "range_bin": 48,
+              "intensity": 91.67634582519531,
+              "confidence": 0.8660655837842939
+            },
+            {
+              "timestamp_s": 4.5,
+              "range_bin": 48,
+              "intensity": 93.20331573486328,
+              "confidence": 0.8659077551428025
+            },
+            {
+              "timestamp_s": 4.75,
+              "range_bin": 48,
+              "intensity": 93.41468811035156,
+              "confidence": 0.8647350754039718
+            },
+            {
+              "timestamp_s": 5.0,
+              "range_bin": 48,
+              "intensity": 92.83106994628906,
+              "confidence": 0.8661792357773798
+            },
+            {
+              "timestamp_s": 5.25,
+              "range_bin": 48,
+              "intensity": 91.08061218261719,
+              "confidence": 0.8650816653010132
+            },
+            {
+              "timestamp_s": 5.5,
+              "range_bin": 49,
+              "intensity": 90.39981842041016,
+              "confidence": 0.8630895227694421
+            },
+            {
+              "timestamp_s": 5.75,
+              "range_bin": 49,
+              "intensity": 90.53968811035156,
+              "confidence": 0.8637669755455744
+            }
+          ]
+        }
+      ],
+      "coverage_percent": 83.33333333333333
+    }
+  },
+  "review": {
+    "id": "92e14539-12be-4ea3-81a9-bfaedf888d8a",
+    "finding_id": "14fdf1e1-e416-4ee7-a54f-8e596415a46e",
+    "decision": "accept",
+    "finding_status": "human_confirmed"
+  },
+  "work_order": {
+    "id": "e95cba66-c2e6-4cf0-a670-b1d824d226bc",
+    "finding_id": "14fdf1e1-e416-4ee7-a54f-8e596415a46e",
+    "title": "Engineering review of concrete crack",
+    "priority": "medium",
+    "status": "open"
+  },
+  "models": [
+    {
+      "id": "02a7dfb1-20ed-4f63-9833-b8509bdb055d",
+      "name": "Structural Classical CV",
+      "version": "0.1.0",
+      "status": "candidate"
+    },
+    {
+      "id": "e3936edc-7162-44f3-9c87-7084053b27c4",
+      "name": "Underwater Pipeline CV",
+      "version": "0.1.0",
+      "status": "candidate"
+    }
+  ],
+  "edge": {
+    "device": {
+      "id": "e35162e6-74de-4238-b868-7157bc8307a8",
+      "name": "Edge Node A-17",
+      "status": "online"
+    },
+    "sync": {
+      "status": "accepted",
+      "event_id": "demo-sync-0001"
+    },
+    "duplicate_replay": {
+      "status": "duplicate",
+      "event_id": "demo-sync-0001"
+    }
+  },
+  "dashboard": {
+    "organization": {
+      "id": "18b193cd-a08e-4889-bf78-f13f814076cc",
+      "name": "OpenInspect Demo Organization"
+    },
+    "facilities": 2,
+    "assets": 4,
+    "active_missions": 2,
+    "critical_findings": 0,
+    "coverage_percent": 91.66666666666666,
+    "work_order_backlog": 1,
+    "device_status": [
+      {
+        "name": "Edge Node A-17",
+        "status": "online",
+        "software_version": "0.1.0"
+      }
+    ],
+    "model_status": [
+      {
+        "name": "Structural Classical CV",
+        "version": "0.1.0",
+        "status": "candidate"
+      },
+      {
+        "name": "Underwater Pipeline CV",
+        "version": "0.1.0",
+        "status": "candidate"
+      }
+    ],
+    "risk_trend": [
+      42,
+      40,
+      38,
+      35,
+      33,
+      31
+    ]
+  },
+  "findings_count": 15,
+  "audit_event_count": 30,
+  "evidence_video": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\pipeline_evidence.mp4",
+  "reports": [
+    {
+      "id": "2dfec724-6ab8-4087-bff4-fa3af9e15f20",
+      "mission_id": "59189332-992d-4633-9c2e-afff260b0c73",
+      "report_type": "mission",
+      "object_path": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\59189332-992d-4633-9c2e-afff260b0c73\\reports\\mission-59189332-992d-4633-9c2e-afff260b0c73.pdf",
+      "checksum": "57d7425e31b14a079ab2b9e528c9b2f1b553c70ae240cd122a408bf44a1fd533"
+    },
+    {
+      "id": "197ad841-1667-42db-808f-3f7b0caa0dc3",
+      "mission_id": "ea11c80b-b43c-4447-b520-61efeab85fcc",
+      "report_type": "coverage",
+      "object_path": "E:\\Husnain Profile Projects\\openinspect-os\\openinspect-os\\demo\\outputs\\object-store\\18b193cd-a08e-4889-bf78-f13f814076cc\\ea11c80b-b43c-4447-b520-61efeab85fcc\\reports\\coverage-ea11c80b-b43c-4447-b520-61efeab85fcc.pdf",
+      "checksum": "f76a0d5dc6bc6e88414f6b5eb7d6d19b03aca02ebc3472b7927c66acbd7bee96"
+    }
+  ],
+  "claims": "All CV outputs are produced by executable algorithms over project-owned synthetic media. External dataset claims are excluded from the default demo."
+}

@@ -1,0 +1,15 @@
+name: Model or dataset proposal
+description: Add a model, dataset adapter or evaluation
+body:
+  - type: input
+    id: source
+    attributes: {label: Official source and licence}
+    validations: {required: true}
+  - type: textarea
+    id: purpose
+    attributes: {label: Inspection purpose and labels}
+    validations: {required: true}
+  - type: textarea
+    id: evaluation
+    attributes: {label: Evaluation and failure cases}
+    validations: {required: true}

@@ -1,0 +1,21 @@
+version: 1
+project_owned:
+  - id: openinspect-demo-v0.1.0
+    path: datasets/project-owned
+    license: CC-BY-4.0
+    redistributable: true
+    default_demo: true
+external:
+  - id: sdnet2018
+    homepage: https://digitalcommons.usu.edu/all_datasets/48/
+    license: CC-BY-4.0
+    redistributable: true
+    default_demo: false
+    adapter: datasets/adapters/sdnet2018.py
+  - id: subpipe-v3
+    homepage: https://zenodo.org/records/10808161
+    repository: https://github.com/remaro-network/SubPipe-dataset
+    license: CC-BY-4.0-dataset; GPL-3.0-repository-code
+    redistributable: true
+    default_demo: false
+    adapter: datasets/adapters/subpipe.py
