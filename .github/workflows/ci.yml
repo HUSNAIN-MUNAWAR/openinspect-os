@@ -43,4 +43,8 @@ jobs:
       - uses: actions/dependency-review-action@v4
         if: github.event_name == 'pull_request'
       - uses: aquasecurity/trivy-action@v0.35.0
-        with: {scan-type: fs, scan-ref: ., severity: HIGH,CRITICAL, exit-code: "0"}
+        with:
+          scan-type: fs
+          scan-ref: .
+          severity: HIGH,CRITICAL
+          exit-code: "0"
