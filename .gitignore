@@ -18,6 +18,7 @@ openinspect.db
 object-store/
 mlruns/
 external_data/
+docs/external-evaluation/processed/
 demo/outputs/*.db
 demo/outputs/*.mp4
 demo/outputs/object-store/
