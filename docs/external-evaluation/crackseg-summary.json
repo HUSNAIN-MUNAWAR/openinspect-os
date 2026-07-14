@@ -1,0 +1,34 @@
+[
+  {
+    "image": "1616.rf.c868709931a671796794fdbb95352c5a.jpg",
+    "gt_boxes": 3,
+    "predicted_boxes": 8,
+    "confidence": 0.5660307026023742,
+    "severity": "high-relative",
+    "affected_area_percent": 27.170395710059168
+  },
+  {
+    "image": "1675.rf.e3aa3f8d28d0247ef0284dd46dacc29f.jpg",
+    "gt_boxes": 1,
+    "predicted_boxes": 8,
+    "confidence": 0.99,
+    "severity": "high-relative",
+    "affected_area_percent": 18.843611316568047
+  },
+  {
+    "image": "1686.rf.809fb1b51c607e5cf787e44ef4ddd7b8.jpg",
+    "gt_boxes": 3,
+    "predicted_boxes": 8,
+    "confidence": 0.99,
+    "severity": "high-relative",
+    "affected_area_percent": 15.195081360946746
+  },
+  {
+    "image": "1706.rf.011d213c21ec78896c36728dcbc156f5.jpg",
+    "gt_boxes": 1,
+    "predicted_boxes": 2,
+    "confidence": 0.99,
+    "severity": "high-relative",
+    "affected_area_percent": 39.90384615384615
+  }
+]

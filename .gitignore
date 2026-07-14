@@ -17,6 +17,7 @@ node_modules/
 openinspect.db
 object-store/
 mlruns/
+external_data/
 demo/outputs/*.db
 demo/outputs/*.mp4
 demo/outputs/object-store/

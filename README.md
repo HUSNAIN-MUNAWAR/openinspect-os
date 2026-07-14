@@ -31,6 +31,26 @@ The screenshots below are captured from the local web application using generate
 |---|---|
 | ![MLOps model registry](docs/screenshots/mlops.png) | ![Project-owned pipeline evidence sequence](demo/outputs/pipeline_evidence.gif) |
 
+## External Crack-Seg Smoke Test
+
+OpenInspect OS also includes a reproducible external-data smoke test for credibility checks against annotated concrete-crack imagery. The script downloads the public Ultralytics Crack-Seg archive into ignored local storage, runs the structural detector on four held-out test images and renders qualitative bounding-box evidence.
+
+![External Crack-Seg bounding-box smoke test](docs/screenshots/external-crackseg-bboxes.png)
+
+Green boxes are dataset labels. Red boxes are OpenInspect mask-derived candidate regions. This is a qualitative smoke test only; it is not a benchmark, field-performance claim or model certification.
+
+```bash
+python scripts/external_crackseg_smoke_test.py
+```
+
+Outputs:
+
+```text
+docs/screenshots/external-crackseg-bboxes.png
+docs/external-evaluation/crackseg-summary.json
+external_data/crack-seg/        # ignored; downloaded raw archive and extraction
+```
+
 ## What Runs Today
 
 - Multi-tenant FastAPI backend for organizations, facilities, assets, plans, missions, uploads, findings, reviews, work orders, reports, model versions, edge devices, sync events and audit logs.
@@ -249,6 +269,7 @@ The repository redistributes only generated project-owned demonstration data. It
 
 Optional external dataset adapters are included, but the external datasets themselves are not redistributed:
 
+- Crack-Seg sample archive from Ultralytics is downloaded on demand by `scripts/external_crackseg_smoke_test.py` for qualitative local testing.
 - SDNET2018 structural adapter: users must obtain data from the official source and preserve its license terms.
 - SubPipe adapter: users must obtain RGB/sonar/navigation data from the official publisher and preserve required attribution.
 
