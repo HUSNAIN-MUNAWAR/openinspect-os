@@ -1,6 +1,6 @@
 PYTHON ?= python
 
-.PHONY: install demo animation api test lint clean frontend
+.PHONY: install demo animation external-runtime api test lint clean frontend
 
 install:
 	$(PYTHON) -m pip install -e .[dev]
@@ -10,6 +10,9 @@ demo:
 
 animation:
 	$(PYTHON) scripts/generate_production_reel.py
+
+external-runtime:
+	$(PYTHON) scripts/generate_external_crackseg_runtime_video.py
 
 api:
 	PYTHONPATH=.:apps/api uvicorn openinspect_api.main:app --host 0.0.0.0 --port 8000 --reload

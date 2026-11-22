@@ -158,6 +158,33 @@ The storyboard and model/data contract are documented in
 [docs/animation/STORYBOARD.md](docs/animation/STORYBOARD.md). The reel is a
 software-validation and portfolio asset; it is not a field-performance claim.
 
+### Real external-data runtime evidence
+
+The stricter runtime trace uses the local OpenInspect structural analyzer on
+four real images from the external Ultralytics Crack-Seg test split. It writes
+the actual mask-derived candidate boxes into a video, a poster, a per-box CSV,
+and a JSON report:
+
+```powershell
+py -3.12 -u scripts/generate_external_crackseg_runtime_video.py
+# or: make external-runtime
+```
+
+Outputs:
+
+```text
+docs/external-evaluation/runtime-smoke/runtime_video.mp4
+docs/external-evaluation/runtime-smoke/runtime_poster.png
+docs/external-evaluation/runtime-smoke/runtime_predictions.csv
+docs/external-evaluation/runtime-smoke/runtime_summary.json
+```
+
+The run is intentionally labelled as a smoke test. This repository currently
+has no learned checkpoint for this path: the executed algorithm is deterministic
+classical computer vision. The captured run produced 1 true positive, 25 false
+positives, and 7 missed labeled regions at IoU >= 0.5. Those measurements are
+limitations of the baseline, not a performance claim.
+
 ## Run Locally
 
 ### Backend

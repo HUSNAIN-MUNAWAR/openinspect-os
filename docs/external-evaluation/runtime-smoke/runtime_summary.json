@@ -1,0 +1,112 @@
+{
+  "run_type": "external_crackseg_real_runtime_video",
+  "generated_at_utc": "2026-11-22T15:17:18.592182+00:00",
+  "command": "py -3.12 -u scripts/generate_external_crackseg_runtime_video.py",
+  "source": {
+    "dataset": "Ultralytics Crack-Seg test split",
+    "dataset_url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/crack-seg.zip",
+    "archive": "external_data\\crack-seg\\crack-seg.zip",
+    "archive_sha256": "814b566d61e890024d15f22a3e6b14e252f781ab83f60a8d59e6684817efecdc",
+    "images_used": 4,
+    "frames_per_image": 6,
+    "note": "Raw external data is not committed; the archive hash identifies the local input."
+  },
+  "algorithm": {
+    "entrypoint": "services.vision.structural.analyze_file",
+    "type": "deterministic classical computer vision",
+    "learned_model": null,
+    "checkpoint": null,
+    "device": "cpu",
+    "matching_iou_threshold": 0.5
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "opencv": "4.13.0",
+    "numpy": "2.5.1",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "aggregate": {
+    "ground_truth": 8,
+    "predicted": 26,
+    "true_positive": 1,
+    "false_positive": 25,
+    "false_negative": 7,
+    "precision": 0.038462,
+    "recall": 0.125,
+    "f1": 0.058824
+  },
+  "per_sample": [
+    {
+      "sample_index": 1,
+      "image": "external_data\\crack-seg\\archive\\images\\test\\1616.rf.c868709931a671796794fdbb95352c5a.jpg",
+      "ground_truth_boxes": 3,
+      "predicted_boxes": 8,
+      "true_positive": 0,
+      "false_positive": 8,
+      "false_negative": 3,
+      "confidence": 0.566031,
+      "severity": "high-relative",
+      "affected_area_percent": 27.170396,
+      "mask": "docs\\external-evaluation\\processed\\1616.rf.c868709931a671796794fdbb95352c5a_mask.png",
+      "overlay": "docs\\external-evaluation\\processed\\1616.rf.c868709931a671796794fdbb95352c5a_overlay.png"
+    },
+    {
+      "sample_index": 2,
+      "image": "external_data\\crack-seg\\archive\\images\\test\\1675.rf.e3aa3f8d28d0247ef0284dd46dacc29f.jpg",
+      "ground_truth_boxes": 1,
+      "predicted_boxes": 8,
+      "true_positive": 0,
+      "false_positive": 8,
+      "false_negative": 1,
+      "confidence": 0.99,
+      "severity": "high-relative",
+      "affected_area_percent": 18.843611,
+      "mask": "docs\\external-evaluation\\processed\\1675.rf.e3aa3f8d28d0247ef0284dd46dacc29f_mask.png",
+      "overlay": "docs\\external-evaluation\\processed\\1675.rf.e3aa3f8d28d0247ef0284dd46dacc29f_overlay.png"
+    },
+    {
+      "sample_index": 3,
+      "image": "external_data\\crack-seg\\archive\\images\\test\\1686.rf.809fb1b51c607e5cf787e44ef4ddd7b8.jpg",
+      "ground_truth_boxes": 3,
+      "predicted_boxes": 8,
+      "true_positive": 1,
+      "false_positive": 7,
+      "false_negative": 2,
+      "confidence": 0.99,
+      "severity": "high-relative",
+      "affected_area_percent": 15.195081,
+      "mask": "docs\\external-evaluation\\processed\\1686.rf.809fb1b51c607e5cf787e44ef4ddd7b8_mask.png",
+      "overlay": "docs\\external-evaluation\\processed\\1686.rf.809fb1b51c607e5cf787e44ef4ddd7b8_overlay.png"
+    },
+    {
+      "sample_index": 4,
+      "image": "external_data\\crack-seg\\archive\\images\\test\\1706.rf.011d213c21ec78896c36728dcbc156f5.jpg",
+      "ground_truth_boxes": 1,
+      "predicted_boxes": 2,
+      "true_positive": 0,
+      "false_positive": 2,
+      "false_negative": 1,
+      "confidence": 0.99,
+      "severity": "high-relative",
+      "affected_area_percent": 39.903846,
+      "mask": "docs\\external-evaluation\\processed\\1706.rf.011d213c21ec78896c36728dcbc156f5_mask.png",
+      "overlay": "docs\\external-evaluation\\processed\\1706.rf.011d213c21ec78896c36728dcbc156f5_overlay.png"
+    }
+  ],
+  "outputs": {
+    "video": "docs\\external-evaluation\\runtime-smoke\\runtime_video.mp4",
+    "poster": "docs\\external-evaluation\\runtime-smoke\\runtime_poster.png",
+    "predictions_csv": "docs\\external-evaluation\\runtime-smoke\\runtime_predictions.csv",
+    "sha256": {
+      "docs\\external-evaluation\\runtime-smoke\\runtime_video.mp4": "91b0787a09dd710d8d792e46802278729931fc8b30f4cd655927479bde2a0e12",
+      "docs\\external-evaluation\\runtime-smoke\\runtime_poster.png": "a60411dbef1cbbeaf1eb0fe2e61afaeb07a1e3f7edb5dc0b4a4c9a37ff6b8a08",
+      "docs\\external-evaluation\\runtime-smoke\\runtime_predictions.csv": "35f85665e75ab228f3fa36741bb4dfc1428be50432c9ecce3b2343b3b7e0d8a7"
+    }
+  },
+  "interpretation": [
+    "This video is a genuine local execution trace over four external test images.",
+    "Repeated frames hold each analyzed input so the execution trace is readable; no detections are animated into existence.",
+    "The result is a smoke test, not a learned-model benchmark or factory-performance claim.",
+    "The observed false positives are retained as a limitation of this baseline."
+  ]
+}
