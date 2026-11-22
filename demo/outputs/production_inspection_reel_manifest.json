@@ -1,0 +1,138 @@
+{
+  "name": "OpenInspect OS Production Inspection Reel",
+  "version": "0.1.0",
+  "reel": "demo/outputs/production_inspection_reel.gif",
+  "source": "datasets/project-owned/pipeline",
+  "model": {
+    "name": "underwater-pipeline-cv",
+    "version": "classical-cv-0.1",
+    "implementation": "services.vision.underwater.analyze_underwater_image"
+  },
+  "limitations": [
+    "Frames are project-owned synthetic scenes generated for software validation.",
+    "The classical CV baseline is not a learned model or a field-performance claim.",
+    "Confidence and visibility values are demo evidence, not calibrated offshore metrics."
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "source": "datasets/project-owned/pipeline/pipeline_00.png",
+      "timestamp_s": 0.0,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.94736,
+      "visibility": 0.301806,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 2,
+      "source": "datasets/project-owned/pipeline/pipeline_01.png",
+      "timestamp_s": 0.5,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947396,
+      "visibility": 0.301365,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 3,
+      "source": "datasets/project-owned/pipeline/pipeline_02.png",
+      "timestamp_s": 1.0,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947357,
+      "visibility": 0.302288,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 4,
+      "source": "datasets/project-owned/pipeline/pipeline_03.png",
+      "timestamp_s": 1.5,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947396,
+      "visibility": 0.304547,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 5,
+      "source": "datasets/project-owned/pipeline/pipeline_04.png",
+      "timestamp_s": 2.0,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947396,
+      "visibility": 0.303084,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 6,
+      "source": "datasets/project-owned/pipeline/pipeline_05.png",
+      "timestamp_s": 2.5,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.964497,
+      "visibility": 0.178055,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 7,
+      "source": "datasets/project-owned/pipeline/pipeline_06.png",
+      "timestamp_s": 3.0,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.965233,
+      "visibility": 0.177595,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 8,
+      "source": "datasets/project-owned/pipeline/pipeline_07.png",
+      "timestamp_s": 3.5,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947492,
+      "visibility": 0.303687,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 9,
+      "source": "datasets/project-owned/pipeline/pipeline_08.png",
+      "timestamp_s": 4.0,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.956539,
+      "visibility": 0.302453,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 10,
+      "source": "datasets/project-owned/pipeline/pipeline_09.png",
+      "timestamp_s": 4.5,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947348,
+      "visibility": 0.302259,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 11,
+      "source": "datasets/project-owned/pipeline/pipeline_10.png",
+      "timestamp_s": 5.0,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947393,
+      "visibility": 0.302291,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    },
+    {
+      "frame": 12,
+      "source": "datasets/project-owned/pipeline/pipeline_11.png",
+      "timestamp_s": 5.5,
+      "model": "underwater-pipeline-cv",
+      "model_version": "classical-cv-0.1",
+      "confidence": 0.947341,
+      "visibility": 0.302065,
+      "provenance": "project-owned synthetic pipeline scene; algorithmic segmentation"
+    }
+  ]
+}

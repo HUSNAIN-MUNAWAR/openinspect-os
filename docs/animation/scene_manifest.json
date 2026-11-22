@@ -1,0 +1,18 @@
+{
+  "name": "OpenInspect OS Production Inspection Reel",
+  "version": "0.1.0",
+  "fps_equivalent": 4.545,
+  "source": "datasets/project-owned/pipeline",
+  "model": "underwater-pipeline-cv@classical-cv-0.1",
+  "scenes": [
+    {"id": "capture", "frames": [1, 2, 3], "intent": "sensor evidence enters the workflow"},
+    {"id": "enhance", "frames": [4, 5, 6], "intent": "quality and visibility are made explicit"},
+    {"id": "segment", "frames": [7, 8, 9], "intent": "the deterministic baseline creates an inspectable candidate"},
+    {"id": "review", "frames": [10, 11, 12], "intent": "bounded evidence is prepared for human review"}
+  ],
+  "limitations": [
+    "All frames are synthetic and project-owned.",
+    "The classical CV baseline is not a learned model.",
+    "The reel is not a field-performance benchmark."
+  ]
+}

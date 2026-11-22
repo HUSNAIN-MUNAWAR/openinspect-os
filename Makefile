@@ -1,12 +1,15 @@
 PYTHON ?= python
 
-.PHONY: install demo api test lint clean frontend
+.PHONY: install demo animation api test lint clean frontend
 
 install:
 	$(PYTHON) -m pip install -e .[dev]
 
 demo:
 	$(PYTHON) scripts/run_demo.py
+
+animation:
+	$(PYTHON) scripts/generate_production_reel.py
 
 api:
 	PYTHONPATH=.:apps/api uvicorn openinspect_api.main:app --host 0.0.0.0 --port 8000 --reload

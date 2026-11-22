@@ -135,6 +135,29 @@ demo/outputs/sample-mission-report.pdf
 demo/outputs/sample-coverage-report.pdf
 ```
 
+### Production reference animation
+
+The production reel runs the real underwater classical-CV baseline against the
+project-owned synthetic pipeline sequence and writes a reproducible animation
+plus a frame-level evidence manifest:
+
+```bash
+python scripts/generate_production_reel.py
+# or: make animation
+```
+
+Outputs:
+
+```text
+demo/outputs/production_inspection_reel.gif
+demo/outputs/production_inspection_reel_manifest.json
+```
+
+The storyboard and model/data contract are documented in
+[docs/animation/ENHANCEMENT_BRIEF.md](docs/animation/ENHANCEMENT_BRIEF.md) and
+[docs/animation/STORYBOARD.md](docs/animation/STORYBOARD.md). The reel is a
+software-validation and portfolio asset; it is not a field-performance claim.
+
 ## Run Locally
 
 ### Backend
