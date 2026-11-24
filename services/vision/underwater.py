@@ -5,6 +5,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 from .quality import assess_quality
+from .io import write_image
 
 
 @dataclass(slots=True)
@@ -114,9 +115,9 @@ def analyze_file(path: str | Path, output_dir: str | Path) -> dict:
     enhanced_path = output_dir / f"{path.stem}_enhanced.png"
     mask_path = output_dir / f"{path.stem}_pipeline_mask.png"
     overlay_path = output_dir / f"{path.stem}_pipeline_overlay.png"
-    cv2.imwrite(str(enhanced_path), result.enhanced)
-    cv2.imwrite(str(mask_path), result.pipeline_mask)
-    cv2.imwrite(str(overlay_path), result.overlay)
+    write_image(enhanced_path, result.enhanced)
+    write_image(mask_path, result.pipeline_mask)
+    write_image(overlay_path, result.overlay)
     return {
         "source": str(path),
         "enhanced": str(enhanced_path),

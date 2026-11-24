@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 from skimage.morphology import skeletonize
 from .quality import assess_quality
+from .io import write_image
 
 
 @dataclass(slots=True)
@@ -105,8 +106,8 @@ def analyze_file(path: str | Path, output_dir: str | Path, mm_per_pixel: float |
     result = analyze_structural_image(image, mm_per_pixel)
     mask_path = output_dir / f"{path.stem}_mask.png"
     overlay_path = output_dir / f"{path.stem}_overlay.png"
-    cv2.imwrite(str(mask_path), result.mask)
-    cv2.imwrite(str(overlay_path), result.overlay)
+    write_image(mask_path, result.mask)
+    write_image(overlay_path, result.overlay)
     return {
         "source": str(path),
         "mask": str(mask_path),

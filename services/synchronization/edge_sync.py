@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass, asdict
 from pathlib import Path
 import json
+import os
+import tempfile
 import time
 import uuid
 
@@ -26,13 +28,35 @@ class OfflineQueue:
             self.path.write_text("[]")
 
     def _load(self) -> list[dict]:
-        return json.loads(self.path.read_text())
+        try:
+            payload = json.loads(self.path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise RuntimeError(f"offline queue is unreadable: {self.path}") from exc
+        if not isinstance(payload, list) or any(not isinstance(item, dict) for item in payload):
+            raise RuntimeError(f"offline queue must contain a JSON object list: {self.path}")
+        return payload
+
+    def _save(self, items: list[dict]) -> None:
+        encoded = json.dumps(items, indent=2, sort_keys=True) + "\n"
+        fd, temporary = tempfile.mkstemp(prefix=f".{self.path.name}.", dir=self.path.parent)
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as stream:
+                stream.write(encoded)
+                stream.flush()
+                os.fsync(stream.fileno())
+            os.replace(temporary, self.path)
+        except Exception:
+            try:
+                os.unlink(temporary)
+            except FileNotFoundError:
+                pass
+            raise
 
     def enqueue(self, payload: dict, checksum: str) -> SyncEnvelope:
         items = self._load()
         env = SyncEnvelope(str(uuid.uuid4()), self.device_id, len(items) + 1, payload, time.time(), checksum)
         items.append(asdict(env))
-        self.path.write_text(json.dumps(items, indent=2))
+        self._save(items)
         return env
 
     def pending(self) -> list[dict]:
@@ -40,4 +64,4 @@ class OfflineQueue:
 
     def acknowledge(self, event_id: str) -> None:
         items = [x for x in self._load() if x["event_id"] != event_id]
-        self.path.write_text(json.dumps(items, indent=2))
+        self._save(items)
